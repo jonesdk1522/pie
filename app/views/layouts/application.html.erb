@@ -2,7 +2,7 @@
 <html>
 <head>
   <title>Pie</title>
-  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= stylesheet_link_tag "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
@@ -30,6 +30,7 @@
         <ul class="dropdown-menu">
           <li><a href="#">Privacy</a></li>
           <li><a href="#">Security</a></li>
+          <li><a href="#">Sign Out</a></li>
           <li class="divider"></li>
           <li><a href="#">Feedback</a></li>
           </li>
@@ -45,6 +46,9 @@
   </div><!-- /.navbar-collapse -->
 </nav>
 <div class="container">
+  <p class="notice"><%= notice %></p>
+  <p class="alert"><%= alert %></p>
+
   <%= yield %>
 </div>
 </body>
